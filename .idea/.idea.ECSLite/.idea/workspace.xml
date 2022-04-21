@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a6e8d36b-83d7-4092-ab26-be8d69bdf8b9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/PointAndClickInputComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Systems/ButtonSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Systems/PointAndClickInputSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/ButtonComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DA6AB582-61CA-4BF8-8D22-45FA0B5E29FF/31/437231a1/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/ButtonProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/PointAndClickInputProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/MovementLimitationComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Systems/PlayerMouseInputSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9A0E3FE4-C7F4-421A-9B25-00ED03F55E40/3b/a2fb3e9e/IEcsRunSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Systems/TransformMovementSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/TransformMovementComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/CharacterMovementProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/CharacterMovementComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/TransformProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/TransformComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/FollowToTransformProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Mono/EcsGameBootstrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Systems/DoorVerticalOpeningSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/TriggerSwitcherProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/DoorComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/TransformMovementProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9A108B55-AD54-4851-80F2-DD6FBE37DE9D/25/5dbc6f4c/EnemyTagProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Systems/CharacterFollowToPointSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/PlayerTagProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@91cc7e390f/src/EcsWorld.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/MovementLimitationProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.voody.unileo@bef45e8453/Runtime/MonoHelpers/MonoProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.voody.unileo@bef45e8453/Runtime/MonoHelpers/BaseMonoProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.voody.unileo@bef45e8453/Runtime/MonoHelpers/ConvertToEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.voody.unileo@bef45e8453/Runtime/MonoHelpers/IConvertToEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.voody.unileo@bef45e8453/Runtime/MonoHelpers/WorldHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@91cc7e390f/src/EcsFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Systems/FollowToTransformSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/CharacterFollowToPointProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Providers/DoorProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/PlayerTagComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/CharacterFollowToPointComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Systems/CharacterMovementSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/FollowToTransformComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Mono/TriggerSwitcherChecker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Components/TriggerSwitcherComponent.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Code/Switcher/TriggerSwitcherProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Movements/Components/MovementLimitationComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Door/Systems/DoorSmoothOpeningSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Movements/Providers/MovementLimitationProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Systems/PlayerMouseLookSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Hit/Components/HitComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Switcher/Systems/TriggerSwitcherSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Switcher/OnTriggerChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Switcher/OnTriggerSwitcherChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Switcher/TriggerSwitcherChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Switcher/Providers/TriggerSwitcherProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Switcher/Components/TriggerSwitcherComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Door/Components/DoorComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Door/Providers/DoorProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Door/Systems/DoorVerticalOpeningSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Button/ButtonComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Button/ButtonProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Button/ButtonSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/EcsGameBootstrap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/ButtonComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/CharacterFollowToPointComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/CharacterMovementComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/DoorComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/FollowToTransformComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/MovementLimitationComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/PlayerTagComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/PointAndClickInputComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/TransformComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/TransformMovementComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Mono/EcsGameBootstrap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/ButtonProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/CharacterFollowToPointProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/CharacterMovementProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/DoorProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/FollowToTransformProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/MovementLimitationProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/PlayerTagProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/PointAndClickInputProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/TransformMovementProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/TransformProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Providers/TriggerSwitcherProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Mono/TriggerSwitcherChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Systems/ButtonSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Systems/CharacterFollowToPointSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Systems/CharacterMovementSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Systems/FollowToTransformSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Systems/DoorVerticalOpeningSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Systems/PlayerMouseInputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Systems/PointAndClickInputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Systems/TransformMovementSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Components/TriggerSwitcherComponent.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="25mOGuqOJuzKDs3aCVOsoPgyQPB" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="32456">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="32456" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="517" height="464" key="DebuggerActiveHint" timestamp="1650538250709">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="517" height="464" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1650538250709" />
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.0.center" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.0.left" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.0.right" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1650540553792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553792" />
+    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1650540553791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553791" />
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1650540553792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553792" />
+    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1650540553792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553792" />
+    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1650540553792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553792" />
+    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1650540553792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1650540553792" />
+    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1650469915364">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1650469915364" />
+    <state x="638" y="255" width="644" height="530" key="find.popup" timestamp="1646826167384">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="638" y="255" width="644" height="530" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1646826167384" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1650538174388">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1650538174388" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Systems/DoorVerticalOpeningSystem.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Code/Door/Systems/DoorVerticalOpeningSystem.cs" initialLine="23">
+            <startOffsets>
+              <option value="622" />
+            </startOffsets>
+            <endOffsets>
+              <option value="688" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Systems/ButtonSystem.cs</url>
+          <line>18</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Code/Button/ButtonSystem.cs" initialLine="18">
+            <startOffsets>
+              <option value="473" />
+            </startOffsets>
+            <endOffsets>
+              <option value="507" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
