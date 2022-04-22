@@ -1,15 +1,12 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Components
+namespace Code.Components
 {
-	[Serializable]
 	public struct TransformMovementComponent
 	{
 		public Transform Transform;
 		public float SpeedInitial;
-
-		[HideInInspector] public float Speed;
-		[HideInInspector] public Vector3 DirectionNormalized;
+		public float Speed;
+		public Vector3 DirectionNormalized;
 	}
 }

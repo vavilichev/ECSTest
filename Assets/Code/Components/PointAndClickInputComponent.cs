@@ -1,11 +1,9 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Components
+namespace Code.Components
 {
-	[Serializable]
 	public struct PointAndClickInputComponent
 	{
-		public Camera Camera;
+		public Vector3 TargetPosition;
 	}
 }

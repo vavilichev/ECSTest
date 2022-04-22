@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5573857365416107029
+--- !u!1001 &4572368980110367664
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,22 +10,22 @@ PrefabInstance:
     - target: {fileID: 7652923539782398014, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8956dfb3a13f36f4782b66cf8ac85383, type: 2}
+      objectReference: {fileID: 2100000, guid: 8f973f0acd54fc24fa3cac2ec1423640, type: 2}
     - target: {fileID: 7652923540081871429, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 7652923540081871429, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.92
+      value: 2.79
       objectReference: {fileID: 0}
     - target: {fileID: 7652923540646118654, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.04
+      value: -11.56
       objectReference: {fileID: 0}
     - target: {fileID: 7652923540646118654, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 7652923540991546364, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
       propertyPath: m_RootOrder
@@ -73,20 +73,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7652923540991546367, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
       propertyPath: m_Name
-      value: DoorSystem Green
+      value: DoorSystem Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 7652923540991546367, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7652923541134104896, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8956dfb3a13f36f4782b66cf8ac85383, type: 2}
-    m_RemovedComponents:
-    - {fileID: 7652923540081871480, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
-    - {fileID: 7652923540081871483, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
-    - {fileID: 7652923540081871482, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
-    - {fileID: 7652923540081871481, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
-    - {fileID: 7652923540646118652, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
-    - {fileID: 7652923540646118653, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
-    - {fileID: 7652923540646118640, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
-    - {fileID: 7652923540646118643, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
-    - {fileID: 7652923540646118641, guid: 29696397ca37b664cabcb52eca56dade, type: 3}
+      objectReference: {fileID: 2100000, guid: 8f973f0acd54fc24fa3cac2ec1423640, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29696397ca37b664cabcb52eca56dade, type: 3}

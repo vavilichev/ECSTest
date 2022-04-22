@@ -1,18 +1,19 @@
-﻿using Components;
-using Leopotam.Ecs;
+﻿using Code.Components;
+using Leopotam.EcsLite;
 using UnityEngine;
 
-namespace Systems
+namespace Code.Systems
 {
 	sealed class CharacterMovementSystem : IEcsRunSystem
 	{
-		private readonly EcsFilter<CharacterMovementComponent> _movableFilter = null;
-
-		public void Run()
+		public void Run(EcsSystems systems)
 		{
-			foreach (var entity in _movableFilter)
+			var filter = systems.GetWorld().Filter<CharacterMovementComponent>().End();
+			var pool = systems.GetWorld().GetPool<CharacterMovementComponent>();
+			
+			foreach (var index in filter)
 			{
-				ref var movementComponent = ref _movableFilter.Get1(entity);
+				ref var movementComponent = ref pool.Get(index);
 				
 				ref var direction = ref movementComponent.DirectionNormalized;
 				ref var characterController = ref movementComponent.CharacterController;

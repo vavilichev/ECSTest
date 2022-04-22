@@ -1,27 +1,31 @@
-﻿using Components;
-using Leopotam.Ecs;
+﻿using Code.Components;
+using Leopotam.EcsLite;
 
-namespace Systems
+namespace Code.Systems
 {
 	public class ButtonSystem : IEcsRunSystem
 	{
-		private readonly EcsFilter<ButtonComponent, TriggerSwitcherComponent, TransformComponent, MovementLimitationComponent> _filter;
-
-		public void Run()
+		public void Run(EcsSystems systems)
 		{
-			foreach (var index in _filter)
+			var buttonFilter = systems.GetWorld()
+				.Filter<ButtonComponent>()
+				.Inc<MovementLimitationComponent>()
+				.End();
+			var buttonPool = systems.GetWorld().GetPool<ButtonComponent>();
+			var movementLimitationPool = systems.GetWorld().GetPool<MovementLimitationComponent>();
+			
+			foreach (var entity in buttonFilter)
 			{
-				var triggerSwitcherComponent = _filter.Get2(index);
-				var transformComponent = _filter.Get3(index);
-				var movementLimitationComponent = _filter.Get4(index);
+				var buttonComponent = buttonPool.Get(entity);
+				var movementLimitationComponent = movementLimitationPool.Get(entity);
 				
-				if (triggerSwitcherComponent.IsOn)
+				if (buttonComponent.IsPressed)
 				{
-					transformComponent.Transform.localPosition = movementLimitationComponent.TargetPosition;
+					buttonComponent.Transform.localPosition = movementLimitationComponent.TargetPosition;
 				}
 				else
 				{
-					transformComponent.Transform.localPosition = movementLimitationComponent.StartPosition;
+					buttonComponent.Transform.localPosition = movementLimitationComponent.StartPosition;
 				}
 			}
 		}

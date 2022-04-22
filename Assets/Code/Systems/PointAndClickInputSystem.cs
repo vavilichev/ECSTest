@@ -1,56 +1,62 @@
-﻿using Components;
-using Leopotam.Ecs;
+﻿using Code.Components;
+using Leopotam.EcsLite;
 using UnityEngine;
 
-namespace Systems
+namespace Code.Systems
 {
-	public class PointAndClickInputSystem : IEcsRunSystem, IEcsInitSystem
+	sealed class PointAndClickInputSystem : IEcsRunSystem, IEcsInitSystem
 	{
-		private readonly EcsFilter<PointAndClickInputComponent, CharacterFollowToPointComponent> _filter = null;
-
-		private bool _wasGroundClicked;
 		private float _posX;
 		private float _posZ;
+		private bool _wasGroundClicked;
 		private LayerMask _groundLayer;
-		
-		public void Init()
+
+		public void Init(EcsSystems systems)
 		{
 			_groundLayer = 1 << LayerMask.NameToLayer("Ground");
 		}
-
-		public void Run()
+		
+		public void Run(EcsSystems systems)
 		{
-			foreach (var index in _filter)
+			ReadClick(systems);
+
+			if (_wasGroundClicked)
 			{
-				ref var inputComponent = ref _filter.Get1(index);
-				ref var followComponent = ref _filter.Get2(index);
+				var filter = systems.GetWorld().Filter<PointAndClickInputComponent>().End();
+				var playerInputPool = systems.GetWorld().GetPool<PointAndClickInputComponent>();
 				
-				ReadClick(inputComponent.Camera);
-
-				if (_wasGroundClicked)
+				foreach (var entity in filter)
 				{
-					var newTargetPosition = new Vector3(_posX, 0f, _posZ);
+					ref var playerInputComponent = ref playerInputPool.Get(entity);
 
-					followComponent.TargetPosition = newTargetPosition;
+					playerInputComponent.TargetPosition.x = _posX;
+					playerInputComponent.TargetPosition.z = _posZ;
 				}
 			}
 		}
-		
-		private void ReadClick(Camera camera)
+
+		private void ReadClick(EcsSystems systems)
 		{
 			_wasGroundClicked = false;
 
 			if (Input.GetMouseButtonDown(0))
 			{
-				var ray = camera.ScreenPointToRay(Input.mousePosition);
-				RaycastHit hit;
-			
-				if(Physics.Raycast(ray, out hit, Mathf.Infinity, _groundLayer))
-				{
-					_wasGroundClicked = true;
+				var filter = systems.GetWorld().Filter<CameraComponent>().End();
+				var camerasPool = systems.GetWorld().GetPool<CameraComponent>();
 
-					_posX = hit.point.x;
-					_posZ = hit.point.z;
+				foreach (var entity in filter)
+				{
+					ref var cameraComponent = ref camerasPool.Get(entity);
+					var ray = cameraComponent.Camera.ScreenPointToRay(Input.mousePosition);
+					RaycastHit hit;
+
+					if(Physics.Raycast(ray, out hit, Mathf.Infinity, _groundLayer))
+					{
+						_wasGroundClicked = true;
+
+						_posX = hit.point.x;
+						_posZ = hit.point.z;
+					}
 				}
 			}
 		}

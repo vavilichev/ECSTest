@@ -1,65 +1,61 @@
-using Systems;
-using Leopotam.Ecs;
+using Code.Systems;
+using Leopotam.EcsLite;
+using Leopotam.EcsLite.UnityEditor;
 using UnityEngine;
-using Voody.UniLeo;
 
-namespace Mono
+namespace Code.Mono
 {
-    public partial class EcsGameBootstrap : MonoBehaviour
+    public class EcsGameBootstrap : MonoBehaviour
     {
         private EcsWorld _world;
-        private EcsSystems _systems;
+        private EcsSystems _initSystems;
+        private EcsSystems _updateSystems;
 
-        private void Start()
+        private void Awake()
         {
             _world = new EcsWorld();
-
-            WorldHandler.Init(_world);
-        
-            _systems = new EcsSystems(_world);
-
-            _systems.ConvertScene();
-        
-            AddInjections();
-            AddFrames();
+            WorldInstance.SetWorld(_world);
+            
+            _initSystems = new EcsSystems(_world);
+            _updateSystems = new EcsSystems(_world);
+            
             AddSystems();
         
-            _systems.Init();
+            _initSystems.Init();
+            _updateSystems.Init();
         }
 
-        private void AddInjections()
-        {
-        
-        }
-    
         private void AddSystems()
         {
-            _systems
+            _initSystems
+                .Add(new CameraInitSystem())
+                .Add(new PlayerInitSystem())
+#if UNITY_EDITOR
+                .Add(new EcsWorldDebugSystem())
+#endif
+                ;
+            
+            _updateSystems
                 .Add(new PointAndClickInputSystem())
-                .Add(new TransformMovementSystem())
+                .Add(new PlayerFollowToPointSystem())
                 .Add(new CharacterMovementSystem())
-                .Add(new CharacterFollowToPointSystem())
-                .Add(new FollowToTransformSystem())
+                .Add(new TransformMovementSystem())
+                .Add(new CameraFollowSystem())
                 .Add(new ButtonSystem())
-                .Add(new DoorVerticalOpeningSystem());
-        }
-
-        private void AddFrames()
-        {
-        
+                .Add(new DoorSystem());
         }
 
         private void Update()
         {
-            _systems.Run();
+            _updateSystems.Run();
         }
 
         private void OnDestroy()
         {
-            if (_systems != null)
+            if (_updateSystems != null)
             {
-                _systems.Destroy();
-                _systems = null;
+                _updateSystems.Destroy();
+                _updateSystems = null;
             }
 
             if (_world != null)

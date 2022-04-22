@@ -1,18 +1,19 @@
-﻿using Components;
-using Leopotam.Ecs;
+﻿using Code.Components;
+using Leopotam.EcsLite;
 using UnityEngine;
 
-namespace Systems
+namespace Code.Systems
 {
 	public class TransformMovementSystem : IEcsRunSystem
 	{
-		private readonly EcsFilter<TransformMovementComponent> _filter = null;
-		
-		public void Run()
+		public void Run(EcsSystems systems)
 		{
-			foreach (var entity in _filter)
+			var movementFilter = systems.GetWorld().Filter<TransformMovementComponent>().End();
+			var movementPool = systems.GetWorld().GetPool<TransformMovementComponent>();
+			
+			foreach (var entity in movementFilter)
 			{
-				ref var transformMovementComponent = ref _filter.Get1(entity);
+				ref var transformMovementComponent = ref movementPool.Get(entity);
 
 				ref var transform = ref transformMovementComponent.Transform;
 				ref var speed = ref transformMovementComponent.Speed;

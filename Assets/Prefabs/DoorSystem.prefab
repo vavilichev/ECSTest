@@ -104,10 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7652923540081871429}
-  - component: {fileID: 7652923540081871480}
-  - component: {fileID: 7652923540081871483}
-  - component: {fileID: 7652923540081871482}
-  - component: {fileID: 7652923540081871481}
+  - component: {fileID: 451164767951236054}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -130,7 +127,7 @@ Transform:
   m_Father: {fileID: 7652923540991546364}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 88.23, z: 0}
---- !u!114 &7652923540081871480
+--- !u!114 &451164767951236054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,56 +136,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7652923540081871428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 863c7f7460b2b49abb4fa9a7ff9cb180, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c3056a8e8e24d0d869dfedb0ed23be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  convertMode: 0
---- !u!114 &7652923540081871483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652923540081871428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 485945240233462a98aea96cb7620d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value:
-    Transform: {fileID: 7652923539782398008}
-    SpeedInitial: 2
-    Speed: 0
-    DirectionNormalized: {x: 0, y: 0, z: 0}
---- !u!114 &7652923540081871482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652923540081871428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 482ae926f4b5439c83b766839cf7d608, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value:
-    StartPosition: {x: 0, y: 2.5, z: 0}
-    TargetPosition: {x: 0, y: -2.5, z: 0}
---- !u!114 &7652923540081871481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652923540081871428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f00b48bfadcd466db99d504e0fe77028, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value:
-    Switcher: {fileID: 7652923540646118649}
+  _doorModelTransform: {fileID: 7652923539782398008}
+  _buttonProvider: {fileID: 5941205966681278408}
 --- !u!1 &7652923540163702225
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,16 +195,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7652923540646118654}
-  - component: {fileID: 7652923540646118653}
-  - component: {fileID: 7652923540646118652}
-  - component: {fileID: 7652923540646118655}
   - component: {fileID: 7652923540646118642}
-  - component: {fileID: 7652923540646118640}
-  - component: {fileID: 7652923540646118643}
-  - component: {fileID: 7652923540646118641}
+  - component: {fileID: 5941205966681278408}
   m_Layer: 0
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,47 +220,6 @@ Transform:
   m_Father: {fileID: 7652923540991546364}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7652923540646118653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652923540646118649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 863c7f7460b2b49abb4fa9a7ff9cb180, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  convertMode: 0
---- !u!114 &7652923540646118652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652923540646118649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85f6081ecad44384a2d372711581c16c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value:
-    GameObject: {fileID: 7652923540646118649}
-    Checker: {fileID: 7652923540646118655}
-    IsOn: 0
---- !u!114 &7652923540646118655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652923540646118649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2024203dbab4402889ced5b950c11257, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &7652923540646118642
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -330,21 +236,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7652923540646118640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652923540646118649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a47aa282f954737a41c68489826b470, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value:
-    Transform: {fileID: 7652923541134104898}
---- !u!114 &7652923540646118643
+--- !u!114 &5941205966681278408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -356,21 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b87c789b49444eb7af682f9b6454d897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7652923540646118641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7652923540646118649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 482ae926f4b5439c83b766839cf7d608, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value:
-    StartPosition: {x: 0, y: 0.3, z: 0}
-    TargetPosition: {x: 0, y: -0.15, z: 0}
+  _buttonModelTransform: {fileID: 7652923541134104898}
 --- !u!1 &7652923540991546367
 GameObject:
   m_ObjectHideFlags: 0

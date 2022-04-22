@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Components
+namespace Code.Components
 {
 	[Serializable]
 	public struct MovementLimitationComponent
