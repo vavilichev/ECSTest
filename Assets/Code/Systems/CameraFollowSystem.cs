@@ -8,28 +8,19 @@ namespace Code.Systems
 	{
 		public void Run(EcsSystems systems)
 		{
-			var cameraFilter = systems.GetWorld().Filter<CameraComponent>().End();
-			var cameraPool = systems.GetWorld().GetPool<CameraComponent>();
+			var cameraFollowFilter = systems.GetWorld().Filter<CameraFollowComponent>().End();
+			var cameraFollowPool = systems.GetWorld().GetPool<CameraFollowComponent>();
+			var posisionPool = systems.GetWorld().GetPool<PositionComponent>();
 			
-			var playerFilter = systems.GetWorld().Filter<PlayerComponent>().End();
-			var playerPool = systems.GetWorld().GetPool<PlayerComponent>();
-
-			foreach (var cameraEntity in cameraFilter)
+			foreach (var cameraEntity in cameraFollowFilter)
 			{
-				ref var cameraComponent = ref cameraPool.Get(cameraEntity);
+				ref var cameraFollowComponent = ref cameraFollowPool.Get(cameraEntity);
+				ref var positionComponent = ref posisionPool.Get(cameraEntity);
+				
+				var currentPosition = positionComponent.Position;
+				var targetPosition = cameraFollowComponent.Target.position + cameraFollowComponent.Offset;
 
-				if (cameraComponent.IsMain)
-				{
-					foreach(var entity in playerFilter)
-					{
-						ref var playerComponent = ref playerPool.Get(entity);
-
-						var currentPosition = cameraComponent.Transform.position;
-						var targetPoint = playerComponent.Transform.position + cameraComponent.Offset;
-
-						cameraComponent.Transform.position = Vector3.SmoothDamp(currentPosition, targetPoint, ref cameraComponent.Velocity, cameraComponent.Smoothness);
-					}    
-				}
+				positionComponent.Position = Vector3.SmoothDamp(currentPosition, targetPosition, ref cameraFollowComponent.Velocity, cameraFollowComponent.Smoothness);
 			}
 		}
 	}

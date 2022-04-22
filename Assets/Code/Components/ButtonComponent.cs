@@ -1,10 +1,7 @@
-﻿using UnityEngine;
-
-namespace Code.Components
+﻿namespace Code.Components
 {
 	public struct ButtonComponent
 	{
 		public bool IsPressed;
-		public Transform Transform;
 	}
 }

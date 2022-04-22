@@ -1,4 +1,5 @@
 ﻿using Code.Components;
+using Code.Mono.Extensions;
 using Leopotam.EcsLite;
 using UnityEngine;
 
@@ -8,46 +9,44 @@ namespace Code.Providers
 	{
 		[SerializeField] private Transform _doorModelTransform;
 		[SerializeField] private ButtonProvider _buttonProvider;
+		[SerializeField] private float _speed = 2f;
+		[SerializeField] private Vector3 _doorBottomPosition = new Vector3(0f, -2.5f, 0f);
+		
+		public int Entity { get; private set; }
 		
 		private EcsWorld _world;
-		private int _entity;
 		
 		private void Start()
 		{
 			_buttonProvider.Start();
 			
 			_world = WorldInstance.GetWorld();
-			_entity = _world.NewEntity();
+			Entity = _world.NewEntity();
 
-			AddDoorComponent(_entity);
-			AddMovementComponent(_entity);
-			AddMovementLimitationComponent(_entity);
+			AddDoorComponent(Entity, _buttonProvider.Entity);
+			AddMovementLimitationComponent(Entity);
+			
+			this.AddPositionComponent(_world, Entity, _doorModelTransform.localPosition);
+			this.AddMovementComponent(_world, Entity, _speed);
+			this.AddDirectionComponent(_world, Entity);
+			this.AddTransformComponent(_world, Entity, _doorModelTransform);
 		}
 
 		private void AddMovementLimitationComponent(int entity)
 		{
 			var movementLimitationPool = _world.GetPool<MovementLimitationComponent>();
 			ref var movementLimitationComponent = ref movementLimitationPool.Add(entity);
-			
-			movementLimitationComponent.StartPosition = new Vector3(0f, 2.5f, 0f);
-			movementLimitationComponent.TargetPosition = new Vector3(0f, -2.5f, 0f);
+
+			movementLimitationComponent.StartPosition = _doorModelTransform.localPosition;
+			movementLimitationComponent.TargetPosition = _doorBottomPosition;
 		}
 
-		private void AddMovementComponent(int entity)
-		{
-			var movementPool = _world.GetPool<TransformMovementComponent>();
-			ref var movementComponent = ref movementPool.Add(entity);
-
-			movementComponent.SpeedInitial = 2f;
-			movementComponent.Transform = _doorModelTransform;
-		}
-
-		private void AddDoorComponent(int entity)
+		private void AddDoorComponent(int entity, int buttonEntity)
 		{
 			var doorPool = _world.GetPool<DoorComponent>();
 			ref var doorComponent = ref doorPool.Add(entity);
 
-			doorComponent.ButtonEntity = _buttonProvider.Entity;
+			doorComponent.ButtonEntity = buttonEntity;
 		}
 	}
 }

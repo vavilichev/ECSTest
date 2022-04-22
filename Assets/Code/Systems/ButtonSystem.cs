@@ -1,4 +1,5 @@
-﻿using Code.Components;
+﻿using System;
+using Code.Components;
 using Leopotam.EcsLite;
 
 namespace Code.Systems
@@ -7,25 +8,29 @@ namespace Code.Systems
 	{
 		public void Run(EcsSystems systems)
 		{
+			var playerFilter = systems.GetWorld().Filter<PlayerComponent>().End();
 			var buttonFilter = systems.GetWorld()
 				.Filter<ButtonComponent>()
-				.Inc<MovementLimitationComponent>()
 				.End();
+
 			var buttonPool = systems.GetWorld().GetPool<ButtonComponent>();
-			var movementLimitationPool = systems.GetWorld().GetPool<MovementLimitationComponent>();
+			var positionPool = systems.GetWorld().GetPool<PositionComponent>();
+			var radiusPool = systems.GetWorld().GetPool<RadiusComponent>();
 			
-			foreach (var entity in buttonFilter)
+			foreach (var buttonEntity in buttonFilter)
 			{
-				var buttonComponent = buttonPool.Get(entity);
-				var movementLimitationComponent = movementLimitationPool.Get(entity);
-				
-				if (buttonComponent.IsPressed)
+				ref var buttonComponent = ref buttonPool.Get(buttonEntity);
+				ref var buttonRadiusComponent = ref radiusPool.Get(buttonEntity);
+
+				foreach (var playerEntity in playerFilter)
 				{
-					buttonComponent.Transform.localPosition = movementLimitationComponent.TargetPosition;
-				}
-				else
-				{
-					buttonComponent.Transform.localPosition = movementLimitationComponent.StartPosition;
+					ref var playerPositionComponent = ref positionPool.Get(playerEntity);
+					ref var buttonPositionComponent = ref positionPool.Get(buttonEntity);
+					
+					var distanceSqr = (buttonPositionComponent.Position - playerPositionComponent.Position).sqrMagnitude;
+					var buttonRangeSqr = Math.Pow(buttonRadiusComponent.Raduis, 2);
+
+					buttonComponent.IsPressed = distanceSqr <= buttonRangeSqr;
 				}
 			}
 		}

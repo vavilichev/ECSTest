@@ -408,7 +408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282050758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.01, z: 0}
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 2031628824}
@@ -1496,7 +1496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1227472029}
-  - component: {fileID: 1227472024}
+  - component: {fileID: 1227472023}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -1504,24 +1504,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!143 &1227472024
-CharacterController:
+--- !u!114 &1227472023
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227472022}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82d9ed6920c4776a0eb253def6a5d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 0.01
 --- !u!4 &1227472029
 Transform:
   m_ObjectHideFlags: 0
@@ -1648,6 +1643,7 @@ GameObject:
   - component: {fileID: 1312069564}
   - component: {fileID: 1312069566}
   - component: {fileID: 1312069565}
+  - component: {fileID: 1312069567}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1720,6 +1716,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1312069567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312069563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 693f1c92589841588ce88b425b8cf641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 1312069566}
+  _target: {fileID: 1227472029}
+  _offset: {x: 22.5, y: 38.4, z: -25.47}
+  _speed: 2
 --- !u!1 &1339979062
 GameObject:
   m_ObjectHideFlags: 0

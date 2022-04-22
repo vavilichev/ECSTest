@@ -141,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _doorModelTransform: {fileID: 7652923539782398008}
   _buttonProvider: {fileID: 5941205966681278408}
+  _speed: 0.005
 --- !u!1 &7652923540163702225
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _buttonModelTransform: {fileID: 7652923541134104898}
+  _pressedButtonOffset: {x: 0, y: -0.45, z: 0}
 --- !u!1 &7652923540991546367
 GameObject:
   m_ObjectHideFlags: 0

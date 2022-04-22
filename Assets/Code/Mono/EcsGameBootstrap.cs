@@ -28,8 +28,6 @@ namespace Code.Mono
         private void AddSystems()
         {
             _initSystems
-                .Add(new CameraInitSystem())
-                .Add(new PlayerInitSystem())
 #if UNITY_EDITOR
                 .Add(new EcsWorldDebugSystem())
 #endif
@@ -37,12 +35,14 @@ namespace Code.Mono
             
             _updateSystems
                 .Add(new PointAndClickInputSystem())
-                .Add(new PlayerFollowToPointSystem())
-                .Add(new CharacterMovementSystem())
-                .Add(new TransformMovementSystem())
+                .Add(new PlayerMovementSystem())
                 .Add(new CameraFollowSystem())
                 .Add(new ButtonSystem())
-                .Add(new DoorSystem());
+                .Add(new DoorSystem())
+                .Add(new UnityPlayerMovementSystem())
+                .Add(new UnityCameraFollowSystem())
+                .Add(new UnityButtonSystem())
+                .Add(new UnityDoorSystem());
         }
 
         private void Update()
